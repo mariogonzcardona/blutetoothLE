@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Data Home
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-list no-lines>
+    <button ion-item *ngFor="let post of posts" (click)="itemSelected(post._id_device)">
+      {{ post._id_device }}
+    </button>
+  </ion-list>
+  <div id="curve_chart"></div>
+  <div id="curve_chartLuz"></div>
+
+</ion-content>
